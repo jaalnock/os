@@ -95,6 +95,7 @@ int main()
     }
   }
 
-  cout<<endl;
+  cout << endl;
   cout << "Total Head Movement : " << totalHeadMov;
+  cout << endl;
 }

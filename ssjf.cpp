@@ -50,6 +50,6 @@ int main()
   }
 
   cout << "Total Head Movement : " << totalHeadMov;
-
+  cout << endl;
   return 0;
 }
