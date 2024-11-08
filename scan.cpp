@@ -37,7 +37,7 @@ int main()
   sort(req.begin(), req.end());
 
   int head_idx = -1;
-  for (int i = 0; i <= n; i++)
+  for (int i = 0; i < n; i++)
   {
     if (req[i] == currHead)
     {
