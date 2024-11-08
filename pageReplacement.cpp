@@ -94,8 +94,6 @@ void optimal(vector<int> pages, int capacity, int n) {
 	int faults=0;
 
 	for(int i=0; i<n; i++) {
-    	int farthest = 0;
-    	int rep_idx = 0;
 		bool found = false;
 		for(int j=0; j<capacity; j++) {
 			if(pages[i] == frame[j]) {
@@ -114,6 +112,9 @@ void optimal(vector<int> pages, int capacity, int n) {
 				}
 			}
 		}
+
+		int farthest = 0;
+    int rep_idx = 0;
 
 		if(!found) {
 			for(int j=0; j<capacity; j++) {
