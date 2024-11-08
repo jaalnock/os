@@ -49,7 +49,7 @@ int main()
   if (!direction)
   {
     cout << currHead;
-    for (int i = head_idx + 1; i <= n; i++)
+    for (int i = head_idx + 1; i < n; i++)
     {
       totalHeadMov += abs(currHead - req[i]);
       currHead = req[i];
@@ -87,7 +87,7 @@ int main()
       cout << " -> " << currHead;
     }
 
-    for (int i = head_idx + 1; i <= n; i++)
+    for (int i = head_idx + 1; i < n; i++)
     {
       totalHeadMov += abs(currHead - req[i]);
       currHead = req[i];
