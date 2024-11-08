@@ -35,17 +35,17 @@ int main()
     int minIdx = -1;
     for (int j = 0; j < n; j++)
     {
-      if (!vis[j] && abs(req[currHead] - req[j]) < minDist)
+      if (!vis[j] && abs(currHead - req[j]) < minDist)
       {
-        minDist = abs(req[currHead] - req[j]);
+        minDist = abs(currHead - req[j]);
         minIdx = j;
       }
     }
 
     vis[minIdx] = true;
-    totalHeadMov += (abs(req[currHead] - req[minIdx]));
-    currHead = minIdx;
-    cout << " -> " << req[minIdx];
+    totalHeadMov += (abs(currHead - req[minIdx]));
+    currHead = req[minIdx];
+    cout << " -> " << currHead;
     count++;
   }
 
